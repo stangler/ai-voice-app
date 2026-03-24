@@ -1,6 +1,3 @@
-# 📄 **README.md（提案版）**
-
-```markdown
 # ai-voice-app
 
 GPU 対応の Devcontainer 上で動作する、XTTS‑v2 を用いた日本語音声合成アプリです。  
