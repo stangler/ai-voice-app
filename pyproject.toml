@@ -1,0 +1,13 @@
+[project]
+name = "ai-voice-app"
+version = "0.1.0"
+requires-python = ">=3.10"
+
+dependencies = [
+    "TTS",
+    "numpy",
+    "scipy"
+]
+
+[tool.uv]
+dev-dependencies = []

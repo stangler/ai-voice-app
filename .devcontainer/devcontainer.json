@@ -1,0 +1,14 @@
+{
+  "name": "ai-voice-app",
+  "dockerFile": "Dockerfile",
+  "runArgs": ["--gpus=all"],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ]
+    }
+  },
+  "postCreateCommand": "uv sync"
+}
