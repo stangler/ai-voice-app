@@ -1,9 +1,10 @@
 FROM python:3.10-slim
 
-# 基本ツール
+# 基本ツール + MeCab と辞書
 RUN apt-get update && apt-get install -y \
-    git ffmpeg build-essential curl && \
-    rm -rf /var/lib/apt/lists/*
+    git ffmpeg build-essential curl \
+    mecab mecab-ipadic-utf8 libmecab-dev \
+    && rm -rf /var/lib/apt/lists/*
 
 # uv インストール
 RUN curl -LsSf https://astral.sh/uv/install.sh | sh
